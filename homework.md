@@ -4,7 +4,7 @@ In a cube-stacking task, multiple cubes are in the front of a robot. The robot i
 
 For simplicity, we assume that the poses of the blocks and the robot are all known. we pick each cube from its top, perpendicular to the ground, so you can assume the end-effector pose for grasping each cube can be directly computed from the cube's pose.
 
-<img src="stack_cubes.png" alt="stack_cubes" style="zoom:25%;" />
+<img src="assets/stack_cubes.png" alt="stack_cubes" style="zoom:25%;" />
 
 > The image is from [NVIDIA cuRobo Docs](https://curobo.org/advanced_examples/2_block_stacking_example.html).
 
