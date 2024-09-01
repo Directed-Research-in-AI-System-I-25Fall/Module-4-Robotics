@@ -8,17 +8,18 @@ To begin, you must prepare your environment for conducting robotics research. Th
 
 **Recommended Simulators:**
 
-- **Isaac Sim** - Requires an RTX GPU for optimal performance.
-- **SAPIEN** - A versatile simulator for various robotic applications.
-- **MuJoCo** - Known for its accuracy and efficiency in dynamics simulation.
-- **PyBullet** - A Python-based simulator that is easy to use and integrate.
-- **Gazebo** - Popular in robotics research for its robustness and ROS compatibility.
+- **PyBullet** (Recommended; lightweight and easy to use)
+- **MuJoCo**
+- **Isaac Sim** (Requires RTX GPU)
+- **SAPIEN**
+- **CoppeliaSim**
+- **Gazebo**
 
-**Recommended Motion Planning Frameworks:**
+*Recommended Motion Planning Frameworks:**
 
-- **[MPlib](https://github.com/haosulab/MPlib)** - A lightweight, easy-to-set-up motion planning library.
-- **cuRobo** - Best utilized with Isaac Sim; requires a GPU. Offers standalone planning APIs as well.
-- **MoveIt/MoveIt 2** - Requires ROS/ROS 2 respectively; widely used in the robotics community.
+- **[MPlib](https://github.com/haosulab/MPlib)** (Recommended; lightweight and easy to use)
+- **cuRobo** (Best utilized with Isaac Sim and with GPU)
+- **MoveIt/MoveIt 2** (Requires ROS/ROS 2 respectively)
 
 Begin by setting up your chosen tools. Refer to the "get started" guides or example codes provided by each tool. For additional resources and helpful code snippets, visit [Simulately](https://simulately.wiki/).
 
@@ -41,7 +42,7 @@ This task involves visualizing the robot's workspace.
 
 1. Start the motion planner.
 2. [2 pts] Sample in the robot's *configuration space* and compute the forward kinematics with the API provided by the motion planner for each sample to get the end-effector's pose (1 pt). Apply the joint positions to the robot in the simulator (1 pt). Report the screenshot of the simulation and attach the corresponding code.
-3. [2 pts] Uniformly smple at least 1000 configurations in the configuration space, compute their end-effector poses, and visualize them in a 3D plot. `matplotlib` or `plotly` are recommended for visualization. Include the generated 3D plot (better saved as a vector graphic) in your report.
+3. [2 pts] Uniformly sample at least 1000 configurations in the configuration space, compute their end-effector poses, and visualize them in a 3D plot. `matplotlib` or `plotly` are recommended for visualization. Include the generated 3D plot (better saved as a vector graphic) in your report.
 
 ## Task 3: Explore Inverse Kinematics (Bonus, 2pts)
 
