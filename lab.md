@@ -1,4 +1,4 @@
-# Lab - Robotics
+# Practice Assignment - Robotics
 
 This tutorial guides you through the basics of *physics simulation* and *motion planning* for robotics applications. You will use various tools and frameworks to understand the principles of robot motion planning.
 
@@ -8,7 +8,7 @@ To begin, you must prepare your environment for conducting robotics research. Th
 
 **Recommended Simulators:**
 
-- **PyBullet** (Recommended; lightweight and easy to use)
+- **PyBullet** (Highly recommended; lightweight and easy to use)
 - **MuJoCo**
 - **Isaac Sim** (Requires RTX GPU)
 - **SAPIEN**
@@ -17,7 +17,7 @@ To begin, you must prepare your environment for conducting robotics research. Th
 
 *Recommended Motion Planning Frameworks:**
 
-- **[MPlib](https://github.com/haosulab/MPlib)** (Recommended; lightweight and easy to use)
+- **[MPlib](https://github.com/haosulab/MPlib)** (Highly recommended; lightweight and easy to use)
 - **cuRobo** (Best utilized with Isaac Sim and with GPU)
 - **MoveIt/MoveIt 2** (Requires ROS/ROS 2 respectively)
 
@@ -44,12 +44,12 @@ This task involves visualizing the robot's workspace.
 2. [2 pts] Sample in the robot's *configuration space* and compute the forward kinematics with the API provided by the motion planner for each sample to get the end-effector's pose (1 pt). Apply the joint positions to the robot in the simulator (1 pt). Report the screenshot of the simulation and attach the corresponding code.
 3. [2 pts] Uniformly sample at least 1000 configurations in the configuration space, compute their end-effector poses, and visualize them in a 3D plot. `matplotlib` or `plotly` are recommended for visualization. Include the generated 3D plot (better saved as a vector graphic) in your report.
 
-## Task 3: Explore Inverse Kinematics (Bonus, 2pts)
+## Task 3: Explore Inverse Kinematics (Bonus, 1pts)
 
 This advanced task focuses on inverse kinematics and collision avoidance.
 
 1. Start both the simulator and the motion planner.
-2. [1 pt] Randomly generate an end-effector pose within the robot's workspace and compute the joint configurations using inverse kinematics (0.5 pt). Verify the accuracy of the inverse kinematics by computing forward kinematics on the solved joint positions and comparing it with the end-effector pose (0.5 pt).
-4. [1 pt] Add primitive objects to the scene, and provide the essential information to the inverse kinematics planner for solving IK with colliding objects. Demonstrate its effectiveness by setting the robot to the resolved pose in the simulator for checking. Attach the code and report the screenshot of the simulation.
+2. Randomly generate an end-effector pose within the robot's workspace and compute the joint configurations using inverse kinematics. Verify the accuracy of the inverse kinematics by computing forward kinematics on the solved joint positions and comparing it with the end-effector pose.
+3. Add primitive objects to the scene, and provide the essential information to the inverse kinematics planner for solving IK with colliding objects. Demonstrate its effectiveness by setting the robot to the resolved pose in the simulator for checking. Attach the code and report the screenshot of the simulation.
 
 **Deliverable:** Provide a comprehensive report on the implementation, attach the code, and include statistical analysis of the pose differences (mean and standard deviation or violin plot). Include screenshots of the final robot pose in the simulator.
