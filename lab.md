@@ -50,6 +50,5 @@ This advanced task focuses on inverse kinematics and collision avoidance.
 
 1. Start both the simulator and the motion planner.
 2. Randomly generate an end-effector pose within the robot's workspace and compute the joint configurations using inverse kinematics. Verify the accuracy of the inverse kinematics by computing forward kinematics on the solved joint positions and comparing it with the end-effector pose.
-3. Add primitive objects to the scene, and provide the essential information to the inverse kinematics planner for solving IK with colliding objects. Demonstrate its effectiveness by setting the robot to the resolved pose in the simulator for checking. Attach the code and report the screenshot of the simulation.
 
-**Deliverable:** Provide a comprehensive report on the implementation, attach the code, and include statistical analysis of the pose differences (mean and standard deviation or violin plot). Include screenshots of the final robot pose in the simulator.
+**Deliverable:** Provide a comprehensive report on the implementation and attach the code. Include screenshots of the final robot pose in the simulator.
